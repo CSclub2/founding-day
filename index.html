@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>يوم بدينا.. وقصة وطن مستمرة | stc</title>
+<link rel="icon" href="image/favicon.svg">
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@700&family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--p:#4f008c;--pd:#2a0049;--g:#c9a45c;--s:#f4ead8;--b:#2b1810;--w:#fff}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{font-family:Tajawal,Tahoma,sans-serif;background:var(--s);color:var(--b);line-height:1.8;overflow-x:hidden}
+h1,h2,h3{font-family:Amiri,'Traditional Arabic',serif}
+section{padding:90px 5% 70px;max-width:1100px;margin:auto}
+h2{font-size:clamp(1.8rem,5vw,2.8rem);color:var(--p);text-align:center}
+h2:after{content:"";display:block;width:90px;height:4px;margin:8px auto 28px;background:linear-gradient(90deg,transparent,var(--g),transparent)}
+.sub{text-align:center;max-width:620px;margin:-10px auto 30px;opacity:.8}
+nav{position:fixed;top:0;inset-inline:0;z-index:50;background:rgba(42,0,73,.92);backdrop-filter:blur(8px);display:flex;align-items:center;gap:8px;padding:8px 3%}
+nav b{color:var(--g);font-family:Amiri,serif;font-size:1.2rem;margin-inline-end:auto;white-space:nowrap}
+nav a{color:#fff;text-decoration:none;font-size:.85rem;padding:4px 9px;border-radius:20px;transition:.3s;white-space:nowrap}
+nav a:hover{background:var(--g);color:var(--pd)}
+#links{display:flex;gap:2px;overflow-x:auto;scrollbar-width:none}
+#bar{position:absolute;bottom:0;right:0;height:3px;width:0;background:var(--g)}
+#snd{background:none;border:1px solid var(--g);color:var(--g);border-radius:50%;width:34px;height:34px;cursor:pointer;font-size:1rem}
+.btn{display:inline-block;background:var(--g);color:var(--pd);border:0;font:700 1.05rem Tajawal;padding:12px 30px;border-radius:40px;cursor:pointer;text-decoration:none;transition:.3s;box-shadow:0 6px 20px rgba(0,0,0,.25)}
+.btn:hover{transform:translateY(-3px) scale(1.04);background:#e0bf7c}
+.btn.alt{background:var(--p);color:#fff}
+.dark{max-width:none;background:var(--pd);color:#fff}
+.dark>*{max-width:1000px;margin-inline:auto}
+.dark h2{color:var(--g)}
+#hero{max-width:none;min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;color:#fff;position:relative;background:radial-gradient(circle at 50% 30%,#6d1bb0,var(--pd) 70%);overflow:hidden}
+#hero:before{content:"";position:absolute;inset:0;background:url(image/pattern.svg);opacity:.35;animation:drift 40s linear infinite}
+@keyframes drift{to{background-position:240px 160px}}
+#hero>*{position:relative}
+#hero img{position:absolute;bottom:0;left:0;width:100%;height:auto;opacity:.9}
+.kicker{color:var(--g);letter-spacing:1px;font-weight:700}
+#hero h1{font-size:clamp(2.2rem,8vw,5rem);line-height:1.3;margin:10px 0}
+#hero h1 span{color:var(--g)}
+.count{font-size:clamp(3rem,10vw,6rem);font-weight:800;color:var(--g);font-family:Amiri,serif;line-height:1}
+#hero p{max-width:560px;margin:12px 20px 24px}
+#hero .btn{margin-bottom:120px}
+.dust i{position:absolute;width:6px;height:6px;background:var(--g);border-radius:50%;opacity:.6;animation:fl 8s infinite ease-in-out}
+@keyframes fl{50%{transform:translateY(-40px);opacity:.1}}
+.rv{opacity:0;transform:translateY(30px);transition:1s}.rv.on{opacity:1;transform:none}
+/* timeline */
+#tl{display:flex;overflow-x:auto;padding:30px 10px 20px;gap:0;position:relative;scrollbar-color:var(--g) transparent}
+.node{flex:0 0 120px;text-align:center;cursor:pointer;position:relative;padding-top:34px}
+.node:before{content:"";position:absolute;top:13px;inset-inline:0;height:4px;background:var(--g);opacity:.4}
+.node i{position:absolute;top:0;left:50%;margin-left:-15px;width:30px;height:30px;border-radius:50%;background:var(--pd);border:3px solid var(--g);transition:.3s;z-index:2}
+.node:hover i,.node.act i{background:var(--g);transform:scale(1.4);box-shadow:0 0 20px var(--g)}
+.node b{display:block;font-size:1.3rem;color:var(--p);font-family:Amiri,serif}
+.node.act b{color:var(--g)}
+.node small{font-size:.8rem}
+.panel{display:flex;gap:24px;align-items:center;background:#fff;border-radius:20px;padding:24px;box-shadow:0 10px 40px rgba(79,0,140,.12);border-inline-start:6px solid var(--g);animation:pop .5s}
+@keyframes pop{from{opacity:0;transform:scale(.96)}}
+.panel .ic{font-size:4.5rem;flex:0 0 110px;height:110px;display:grid;place-items:center;background:var(--s);border-radius:50%}
+.panel h3{color:var(--p);font-size:1.8rem}
+/* quiz + game */
+.box{background:#fff;border-radius:22px;padding:28px;box-shadow:0 10px 40px rgba(79,0,140,.12);max-width:700px;margin:auto}
+.dark .box{color:var(--b)}
+.qn{color:var(--p);font-weight:700;margin-bottom:6px}
+.box h3{font-size:1.5rem;margin-bottom:16px}
+.opt{display:block;width:100%;text-align:right;font:500 1.05rem Tajawal;padding:12px 16px;margin:8px 0;border:2px solid #e3d6ef;border-radius:14px;background:#faf7fd;cursor:pointer;transition:.25s}
+.opt:hover:not(:disabled){border-color:var(--p);transform:translateX(-6px)}
+.opt.ok{background:#d9f5df;border-color:#1c9a3e}.opt.no{background:#fde0e0;border-color:#c33}
+.fb{min-height:28px;font-weight:700;margin:6px 0}
+.res{text-align:center}.res .big{font-size:4rem;color:var(--p);font-weight:800}
+#grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:12px;max-width:760px;margin:auto}
+.t{background:#fff;border:2px solid #e3d6ef;border-radius:16px;padding:14px 8px;text-align:center;cursor:pointer;transition:.25s;font:700 1.05rem Tajawal;color:var(--b);min-height:96px;display:grid;place-items:center}
+.t.pic{font-size:2.8rem}
+.t:hover{transform:translateY(-4px);border-color:var(--g)}
+.t.sel{border-color:var(--p);background:#efe3fb;transform:scale(1.06)}
+.t.done{background:#d9f5df;border-color:#1c9a3e;pointer-events:none}
+.t.bad{animation:sh .4s;border-color:#c33}
+@keyframes sh{25%{transform:translateX(8px)}75%{transform:translateX(-8px)}}
+.stat{text-align:center;margin:14px;font-weight:700;color:var(--p)}
+/* symbols */
+#sy{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:14px;margin-bottom:20px}
+.sy{background:#fff;border:2px solid transparent;border-radius:20px;padding:18px 8px;text-align:center;cursor:pointer;transition:.3s;font:700 1.1rem Tajawal;color:var(--b)}
+.sy:hover,.sy.act{border-color:var(--g);transform:translateY(-6px);box-shadow:0 12px 30px rgba(201,164,92,.4)}
+.sy em{display:block;font-style:normal;font-size:3rem}
+.flag{width:64px;height:42px;background:#0c7a3e;border-radius:4px;margin:6px auto 12px;color:#fff;font-size:.5rem;display:grid;place-items:center;position:relative}
+.flag:after{content:"";position:absolute;bottom:7px;width:70%;height:2px;background:#fff}
+#sym{background:var(--pd);color:#fff;border-radius:20px;padding:24px;text-align:center;min-height:130px}
+#sym h3{color:var(--g);font-size:1.7rem}
+/* stc */
+.path{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:18px;margin-top:20px}
+.pc{background:rgba(255,255,255,.08);border:1px solid var(--g);border-radius:20px;padding:24px;text-align:center;transition:.4s}
+.pc:hover{background:rgba(201,164,92,.18);transform:translateY(-8px)}
+.pc b{display:block;font:800 2.6rem Amiri,serif;color:var(--g)}
+.pc span{font-size:2rem}
+.line{height:4px;background:linear-gradient(90deg,var(--g),#b36bff);width:0;transition:2s;margin:24px auto;border-radius:4px}.line.on{width:100%}
+/* wall + card */
+.form{display:grid;gap:10px;max-width:700px;margin:0 auto 24px}
+input,textarea{font:500 1rem Tajawal;padding:12px 14px;border:2px solid #e3d6ef;border-radius:12px;width:100%;direction:rtl;background:#fff}
+input:focus,textarea:focus{outline:0;border-color:var(--p)}
+#wall{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:14px}
+.msg{background:#fff;border-radius:16px;padding:18px;border-top:5px solid var(--g);box-shadow:0 6px 20px rgba(0,0,0,.08);animation:pop .5s}
+.msg b{display:block;color:var(--p);margin-top:8px}
+#cv{width:100%;max-width:560px;display:block;margin:20px auto;border-radius:16px;box-shadow:0 14px 40px rgba(0,0,0,.35)}
+.row{text-align:center;display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
+footer{background:var(--b);color:var(--g);text-align:center;padding:30px 5%;font-size:.95rem}
+#conf{position:fixed;inset:0;pointer-events:none;z-index:99}
+@media(max-width:640px){.panel{flex-direction:column;text-align:center}nav b{display:none}section{padding-top:80px}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<nav><b>يوم بدينا</b><div id="links">
+<a href="#hero">الرئيسية</a><a href="#journey">الرحلة</a><a href="#quiz">اختبر معلوماتك</a><a href="#game">تحدي التراث</a><a href="#symbols">الرموز</a><a href="#stc">stc والمستقبل</a><a href="#wall">بصمتك</a><a href="#card">بطاقتك</a></div>
+<button id="snd" title="تشغيل/إيقاف الأصوات" aria-label="الصوت">🔇</button><div id="bar"></div></nav>
+
+<header id="hero">
+<p class="kicker">٢٢ فبراير · يوم التأسيس السعودي</p>
+<h1>من ثلاثة قرون<br><span>بدأت الحكاية</span></h1>
+<div class="count" id="cnt">0</div><p style="margin:0">عامًا منذ تأسيس الدولة السعودية عام ١٧٢٧م</p>
+<p>يوم بدينا.. وقصة وطن مستمرة. تحتفل stc معك بجذور وطنٍ عريق ومستقبلٍ يُصنع بالعزيمة والتقنية.</p>
+<a class="btn" href="#journey">ابدأ رحلتك</a>
+<div class="dust" id="dust"></div>
+<img src="image/diriyah.svg" alt="" aria-hidden="true">
+</header>
+
+<section id="journey" class="rv">
+<h2>رحلة عبر التاريخ</h2>
+<p class="sub">اضغط على كل محطة لتكتشف فصلًا من قصة الوطن.</p>
+<div id="tl"></div><div id="panel" class="panel"></div>
+</section>
+
+<section class="dark" id="quiz"><div class="rv">
+<h2>اختبر معلوماتك</h2><div class="box" id="qbox"></div></div>
+</section>
+
+<section id="game" class="rv">
+<h2>تحدي التراث السعودي</h2>
+<p class="sub">اختر الصورة ثم اضغط على اسمها الصحيح. أزياء وأكلات ومعالم من وطننا.</p>
+<div class="stat" id="gst"></div><div id="grid"></div>
+<div class="row" style="margin-top:20px"><button class="btn alt" id="gre">إعادة التحدي</button></div>
+</section>
+
+<section class="dark" id="symbols"><div class="rv">
+<h2>اكتشف رموز التأسيس</h2><div id="sy" style="color:var(--b)"></div><div id="sym"><h3>اختر رمزًا</h3><p>اضغط على أي رمز لتعرف دلالته.</p></div></div>
+</section>
+
+<section id="stc" class="rv" style="max-width:none;padding-inline:5%;background:linear-gradient(160deg,var(--p),var(--pd));color:#fff"><div style="max-width:1000px;margin:auto">
+<h2 style="color:var(--g)">stc والمستقبل</h2>
+<p class="sub">من الدرعية التي جمعت الناس في المجلس والسوق، إلى شبكات تربط كل مدينة وقرية. الاتصال كان دائمًا سرّ قوة الوطن.</p>
+<div class="line" id="ln"></div>
+<div class="path">
+<div class="pc"><span>🏯</span><b>١٧٢٧</b>تأسست الدولة السعودية وبدأ بناء وطن يجمع الناس ويصل أطرافه.</div>
+<div class="pc"><span>📡</span><b>١٩٩٨</b>انطلقت شركة الاتصالات السعودية لتصل المملكة بشبكاتها وخدماتها.</div>
+<div class="pc"><span>🚀</span><b>٢٠٣٠</b>رؤية المملكة والتحول الرقمي: جيل الاتصال والذكاء الذي يصنع المستقبل.</div>
+</div>
+<p style="text-align:center;margin-top:28px;max-width:700px;margin-inline:auto">كما كانت الأسواق والمجالس تربط الناس قديمًا، تربطهم اليوم الشبكات والمنصات الرقمية. أصالة الماضي هي الأساس، والتقنية هي الجناح الذي يحملنا نحو الغد.</p>
+</div></section>
+
+<section id="wall" class="rv">
+<h2>اترك بصمتك</h2>
+<p class="sub">اكتب رسالة وطنية أو تهنئة، وستظهر بين بطاقات الزوار (تُحفظ في متصفحك).</p>
+<div class="form"><input id="wn" maxlength="30" placeholder="اسمك"><textarea id="wm" rows="3" maxlength="200" placeholder="رسالتك بمناسبة يوم التأسيس"></textarea><button class="btn" id="wb">انشر رسالتي</button></div>
+<div id="wall"></div>
+</section>
+
+<section class="dark" id="card"><div class="rv">
+<h2>بطاقة تهنئة تفاعلية</h2>
+<div class="form"><input id="cn" maxlength="24" placeholder="اكتب اسمك لتظهر على البطاقة"></div>
+<canvas id="cv" width="1000" height="640"></canvas>
+<div class="row"><button class="btn" id="dl">حفظ البطاقة كصورة</button></div></div>
+</section>
+<footer>يوم بدينا · كل عام والمملكة بخير · stc تحتفي بيوم التأسيس السعودي</footer>
+<canvas id="conf"></canvas>
+
+<script>
+const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
+let snd=false,AC;
+function beep(f,d=.15,t='sine'){if(!snd)return;try{AC=AC||new(window.AudioContext||window.webkitAudioContext)();const o=AC.createOscillator(),g=AC.createGain();o.type=t;o.frequency.value=f;g.gain.setValueAtTime(.12,AC.currentTime);g.gain.exponentialRampToValueAtTime(.001,AC.currentTime+d);o.connect(g).connect(AC.destination);o.start();o.stop(AC.currentTime+d)}catch(e){}}
+const good=()=>{beep(660);setTimeout(()=>beep(880),120)},bad=()=>beep(180,.3,'sawtooth');
+$('#snd').onclick=e=>{snd=!snd;e.target.textContent=snd?'🔊':'🔇';beep(520)};
+/* progress + reveal + counter */
+addEventListener('scroll',()=>{const h=document.documentElement;$('#bar').style.width=(scrollY/(h.scrollHeight-innerHeight)*100)+'%'},{passive:true});
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('on');if(e.target.id==='stc')$('#ln').classList.add('on')}}),{threshold:.12});
+$$('.rv').forEach(e=>io.observe(e));
+(function(){let n=0,max=new Date().getFullYear()-1727;const t=setInterval(()=>{n+=Math.ceil(max/60);if(n>=max){n=max;clearInterval(t)}$('#cnt').textContent=n},30)})();
+for(let i=0;i<18;i++){const d=document.createElement('i');d.style.cssText=`left:${Math.random()*100}%;top:${Math.random()*80}%;animation-delay:${Math.random()*8}s`;$('#dust').appendChild(d)}
+/* timeline */
+const T=[
+['١٧٢٧م','تأسيس الدولة السعودية الأولى','🏯','في ٢٢ فبراير ١٧٢٧م (٣٠ جمادى الآخرة ١١٣٩هـ) تولّى الإمام محمد بن سعود الحكم في الدرعية، فبدأت قصة الدولة السعودية.'],
+['١٧٤٤م','اتفاق الدرعية','🤝','التقى الإمام محمد بن سعود بالشيخ محمد بن عبدالوهاب، واجتمعت كلمة الدولة على الاستقرار والوحدة ونشر العلم.'],
+['١٧٦٥م','الإمام عبدالعزيز بن محمد','📜','تولّى الحكم بعد والده، وامتد نفوذ الدولة وأمنها في نجد وما حولها.'],
+['١٨٠٣م','الإمام سعود بن عبدالعزيز','🐎','في عهده اتسعت الدولة اتساعًا كبيرًا وضمّت أجزاءً واسعة من الجزيرة العربية ومنها الحجاز.'],
+['١٨١٨م','نهاية الدولة الأولى','🌅','انتهت الدولة السعودية الأولى بعد حملة إبراهيم باشا على الدرعية، لكن روح الدولة بقيت في وجدان أهلها.'],
+['١٨٢٤م','الدولة السعودية الثانية','🌴','أعاد الإمام تركي بن عبدالله تأسيس الدولة وجعل الرياض عاصمتها.'],
+['١٩٠٢م','استعادة الرياض','🏰','في ١٥ يناير ١٩٠٢م استعاد الملك عبدالعزيز الرياض، وبدأت مرحلة التوحيد.'],
+['١٩٣٢م','توحيد المملكة','🇸🇦','في ٢٣ سبتمبر ١٩٣٢م أُعلن توحيد المملكة العربية السعودية، وهو اليوم الوطني.'],
+['٢٠١٦م','رؤية ٢٠٣٠','🚀','انطلقت رؤية المملكة نحو اقتصاد متنوع ومجتمع حيوي ووطن طموح، والتحول الرقمي في قلبها.'],
+['٢٠٢٢م','يوم التأسيس','🎉','صدر أمر ملكي باعتبار ٢٢ فبراير يومًا يُسمّى «يوم التأسيس» وإجازة رسمية، اعتزازًا بجذور الدولة.']];
+T.forEach((t,i)=>{const d=document.createElement('div');d.className='node';d.innerHTML=`<i></i><b>${t[0]}</b><small>${t[1]}</small>`;d.onclick=()=>show(i);$('#tl').appendChild(d)});
+function show(i){$$('.node').forEach((n,j)=>n.classList.toggle('act',i===j));const t=T[i],p=$('#panel');p.style.animation='none';p.offsetWidth;p.style.animation='';p.innerHTML=`<div class="ic">${t[2]}</div><div><h3>${t[0]} · ${t[1]}</h3><p>${t[3]}</p></div>`;beep(300+i*50)}
+show(0);
+/* quiz */
+const Q=[
+['متى يُحتفل بيوم التأسيس السعودي؟',['١ يناير','٢٢ فبراير','٢٣ سبتمبر','١٥ يناير'],1],
+['من هو مؤسس الدولة السعودية الأولى؟',['الإمام تركي بن عبدالله','الملك عبدالعزيز','الإمام محمد بن سعود','الإمام سعود بن عبدالعزيز'],2],
+['ما عاصمة الدولة السعودية الأولى؟',['الدرعية','جدة','مكة المكرمة','الدمام'],0],
+['في أي عام تأسست الدولة السعودية الأولى؟',['١٦٢٧م','١٧٢٧م','١٨٢٤م','١٩٣٢م'],1],
+['من أعاد تأسيس الدولة السعودية الثانية وجعل الرياض عاصمتها؟',['الإمام تركي بن عبدالله','الإمام عبدالعزيز بن محمد','الملك فيصل','الإمام سعود'],0],
+['أي رمز يدل على الكرم والصبر والعطاء؟',['الصقر','النخلة','الشراع','الجمل'],1]];
+let qi=0,qs=0;
+function ask(){const b=$('#qbox');if(qi>=Q.length){const m=qs>=5?'ما شاء الله! أنت من أهل التأسيس 🌟':qs>=3?'أحسنت! معلوماتك رائعة 👏':'بداية جميلة، أعد المحاولة وتعلّم أكثر 💜';b.innerHTML=`<div class="res"><div class="big">${qs}/${Q.length}</div><h3>${m}</h3><p>كل عام وأنت بخير بمناسبة يوم التأسيس، وكل عام ووطننا بألف خير 🇸🇦</p><button class="btn alt" id="qr">أعد الاختبار</button></div>`;$('#qr').onclick=()=>{qi=qs=0;ask()};confetti();return}
+const q=Q[qi];b.innerHTML=`<div class="qn">السؤال ${qi+1} من ${Q.length} · النقاط: ${qs}</div><h3>${q[0]}</h3>`+q[1].map((o,i)=>`<button class="opt" data-i="${i}">${o}</button>`).join('')+'<div class="fb"></div>';
+$$('.opt').forEach(o=>o.onclick=()=>{const i=+o.dataset.i;$$('.opt').forEach(x=>x.disabled=true);$$('.opt')[q[2]].classList.add('ok');if(i===q[2]){qs++;o.parentNode.querySelector('.fb').textContent='إجابة صحيحة! 🎉';good()}else{o.classList.add('no');o.parentNode.querySelector('.fb').textContent='إجابة خاطئة، الصحيحة باللون الأخضر';bad()}
+const n=document.createElement('button');n.className='btn';n.textContent=qi===Q.length-1?'النتيجة':'التالي';n.onclick=()=>{qi++;ask()};o.parentNode.appendChild(n)})}
+ask();
+/* heritage game */
+const H=[['🍛','الكبسة'],['🧥','البشت'],['☕','القهوة العربية'],['🏰','حي الطريف بالدرعية'],['⛰️','الحِجر (مدائن صالح)'],['🐪','الإبل'],['🥣','الجريش'],['👘','الثوب السعودي']];
+let gs=null,gm=0,gt=0;
+const sh=a=>a.map(v=>[Math.random(),v]).sort((x,y)=>x[0]-y[0]).map(x=>x[1]);
+function gstart(){gm=gt=0;gs=null;const g=$('#grid');g.innerHTML='';const tiles=sh(H.flatMap((h,i)=>[{i,k:'pic',t:h[0]},{i,k:'nm',t:h[1]}]));
+tiles.forEach(o=>{const d=document.createElement('div');d.className='t '+o.k;d.textContent=o.t;d.onclick=()=>pick(d,o);g.appendChild(d)});upd()}
+function upd(){$('#gst').textContent=`المطابقات: ${gm}/${H.length} · المحاولات: ${gt}`}
+function pick(d,o){if(gs&&gs.d===d)return;if(!gs||gs.o.k===o.k){if(gs)gs.d.classList.remove('sel');gs={d,o};d.classList.add('sel');beep(400,.08);return}
+gt++;const a=gs;gs=null;a.d.classList.remove('sel');
+if(a.o.i===o.i){a.d.classList.add('done');d.classList.add('done');gm++;good();if(gm===H.length){setTimeout(()=>{$('#gst').innerHTML=`🎉 أنهيت التحدي في ${gt} محاولة! ${gt<=10?'تراثك في القلب ❤️':'أحسنت، حاول بمحاولات أقل'}`;confetti()},300)}}
+else{[a.d,d].forEach(x=>{x.classList.add('bad');setTimeout(()=>x.classList.remove('bad'),450)});bad()}upd()}
+$('#gre').onclick=gstart;gstart();
+/* symbols */
+const S=[['flag','العلم السعودي','يحمل الشهادة «لا إله إلا الله محمد رسول الله» وسيفًا، ويرمز إلى التوحيد والعدل والقوة والأمان.'],
+['🌴','النخلة','رمز الخير والكرم والثبات والعطاء، وهي حاضرة في شعار المملكة وأرضها.'],
+['🦅','الصقر','رمز الشجاعة والبصيرة وعلو الهمة، ورفيق أهل الجزيرة العربية عبر التاريخ.'],
+['🐎','الخيل العربية','رمز الأصالة والفروسية والعزّة، وكانت جزءًا من مسيرة الدولة وحياة أهلها.'],
+['🏪','السوق','مكان التبادل والتواصل بين الناس، ويرمز إلى الازدهار والتجارة والحياة الاجتماعية.'],
+['🛖','المجلس','مكان الضيافة والشورى والتلاقي، ويرمز إلى الكرم والتواصل والحكمة.']];
+S.forEach((s,i)=>{const d=document.createElement('button');d.className='sy';d.innerHTML=(s[0]==='flag'?'<div class="flag">لا إله إلا الله</div>':`<em>${s[0]}</em>`)+s[1];d.onclick=()=>{$$('.sy').forEach(x=>x.classList.remove('act'));d.classList.add('act');$('#sym').innerHTML=`<h3>${s[1]}</h3><p>${s[2]}</p>`;beep(350+i*60)};$('#sy').appendChild(d)});
+/* wall */
+let M=[];try{M=JSON.parse(localStorage.getItem('fd_msgs')||'[]')}catch(e){}
+if(!M.length)M=[{n:'stc',m:'كل عام والمملكة بخير، من ثلاثة قرون بدأت الحكاية وما زالت تُكتب بسواعد أبنائها.'}];
+function wall(){const w=$('#wall');w.innerHTML='';M.slice().reverse().forEach(x=>{const d=document.createElement('div');d.className='msg';const p=document.createElement('p'),b=document.createElement('b');p.textContent='« '+x.m+' »';b.textContent='— '+x.n;d.append(p,b);w.appendChild(d)})}
+wall();
+$('#wb').onclick=()=>{const n=$('#wn').value.trim()||'زائر',m=$('#wm').value.trim();if(!m){$('#wm').focus();return}M.push({n,m});try{localStorage.setItem('fd_msgs',JSON.stringify(M.slice(-30)))}catch(e){}$('#wm').value='';wall();good();confetti()};
+/* card */
+function draw(){const c=$('#cv'),x=c.getContext('2d'),W=1000,H=640;const g=x.createLinearGradient(0,0,W,H);g.addColorStop(0,'#6d1bb0');g.addColorStop(1,'#2a0049');x.fillStyle=g;x.fillRect(0,0,W,H);
+x.strokeStyle='rgba(201,164,92,.18)';x.lineWidth=2;for(let i=0;i<W;i+=60)for(let j=0;j<H;j+=60){x.beginPath();x.moveTo(i,j+30);x.lineTo(i+30,j);x.lineTo(i+60,j+30);x.lineTo(i+30,j+60);x.closePath();x.stroke()}
+x.strokeStyle='#c9a45c';x.lineWidth=6;x.strokeRect(28,28,W-56,H-56);x.lineWidth=2;x.strokeRect(44,44,W-88,H-88);
+x.fillStyle='#c9a45c';x.beginPath();x.moveTo(0,H);for(let i=0;i<=W;i+=50){x.lineTo(i,H-40-(i/50%2?25:0))}x.lineTo(W,H);x.fill();
+x.direction='rtl';x.textAlign='center';x.fillStyle='#c9a45c';x.font='700 38px Tajawal,Tahoma';x.fillText('٢٢ فبراير · يوم التأسيس السعودي',W/2,130);
+x.fillStyle='#fff';x.font='700 84px Amiri,serif';x.fillText('يوم بدينا',W/2,235);
+x.font='500 36px Tajawal,Tahoma';x.fillStyle='#e9dcf5';x.fillText('كل عام وأنت بخير، وكل عام والوطن بألف خير',W/2,310);
+const n=$('#cn').value.trim()||'اسمك هنا';x.fillStyle='#c9a45c';x.font='700 72px Amiri,serif';x.fillText(n,W/2,430);
+x.fillStyle='#fff';x.font='700 30px Tajawal,Tahoma';x.fillText('من ثلاثة قرون بدأت الحكاية',W/2,500);x.font='700 28px Tajawal,Tahoma';x.fillText('stc تحتفل معك',W/2,545)}
+$('#cn').oninput=draw;(document.fonts?document.fonts.ready:Promise.resolve()).then(draw);draw();
+$('#dl').onclick=()=>{draw();const a=document.createElement('a');a.download='founding-day-card.png';a.href=$('#cv').toDataURL('image/png');a.click();good()};
+/* confetti */
+function confetti(){const c=$('#conf'),x=c.getContext('2d');c.width=innerWidth;c.height=innerHeight;const P=Array.from({length:120},()=>({x:Math.random()*c.width,y:-20,v:2+Math.random()*4,r:4+Math.random()*5,c:['#c9a45c','#4f008c','#fff','#0c7a3e'][Math.random()*4|0],s:Math.random()*2-1}));let f=0;(function a(){x.clearRect(0,0,c.width,c.height);P.forEach(p=>{p.y+=p.v;p.x+=p.s;x.fillStyle=p.c;x.fillRect(p.x,p.y,p.r,p.r*1.6)});if(++f<170)requestAnimationFrame(a);else x.clearRect(0,0,c.width,c.height)})()}
+</script>
+</body>
+</html>
